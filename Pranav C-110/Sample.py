@@ -4,7 +4,7 @@ import random
 import pandas as pd
 import csv
 
-df = pd.read_csv("medium_data.csv")
+df = pd.read_csv("data.csv")
 data = df["reading_time"].tolist()
 fig = ff.create_distplot([data], ["reading_time"], show_hist=False)
 fig.show()
